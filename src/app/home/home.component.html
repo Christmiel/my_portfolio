@@ -1,0 +1,877 @@
+<header id="header" class="header d-flex align-items-center fixed-top" [class.header-show]="isMenuOpen">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Logo -->
+        </a>
+
+        <!-- Bouton mobile (ouverture) -->
+        <i class="mobile-nav-toggle bi" [ngClass]="isMenuOpen ? 'bi-x' : 'bi-list'" (click)="toggleMenu()">
+        </i>
+
+        <nav id="navmenu" class="navmenu" [class.navmenu-active]="isMenuOpen">
+
+            <!-- Bouton fermer dans le menu -->
+            <i class="close-nav bi bi-x text-white" (click)="toggleMenu()"></i>
+
+            <div class="profile-img">
+                <img src="assets/img/profile/chris.jfif" class="img-fluid rounded-circle" alt="">
+            </div>
+
+            <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
+                <h1 class="sitename">Christmiel Djohi</h1>
+            </a>
+
+            <div class="social-links text-center">
+                <a href="https://www.linkedin.com/in/christmiel-djohi-15549523a/" target="_blank" class="linkedin"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Christmiel" target="_blank"><i class="bi bi-github"></i></a>
+
+            </div>
+
+            <ul>
+                <li><a href="#hero" (click)="toggleMenu()">Accueil</a></li>
+                <li><a href="#about" (click)="toggleMenu()">À propos</a></li>
+                <li><a href="#resume" (click)="toggleMenu()">CV</a></li>
+                <li><a href="#portfolio" (click)="toggleMenu()">Portfolio</a></li>
+                <li><a href="#services" (click)="toggleMenu()">Services</a></li>
+
+                <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section ">
+
+        <div class="container">
+            <div class="row g-0 align-items-center">
+
+                <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
+                    <div class="content-wrapper">
+                        <h1 class="hero-title">
+                            Développeuse Backend <span class="typed"></span>
+                        </h1>
+
+                        <p style="font-family: 'Montserrat-Medium'; text-align: justify;" class="lead">
+                            Développeuse Backend spécialisée en PHP Laravel et C# .NET, j’architecture et mets
+                            en place des solutions performantes, sécurisées et scalables.
+                            Je maîtrise la conception d’API, l’intégration de bases de données (MySQL, PostgreSQL et
+                            SQLServer),
+                            l’optimisation des performances et la sécurité applicative pour garantir
+                            un backend robuste et parfaitement adapté aux besoins métiers.
+                        </p>
+
+                        <div style="  font-family: 'Montserrat-Medium';" class="hero-stats" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="stat-item">
+                                <span class="purecounter" data-purecounter-start="0" data-purecounter-end="60"
+                                    data-purecounter-duration="2">10</span>
+                                <span class="stat-label">APIs Développées</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5"
+                                    data-purecounter-duration="2">3</span>
+                                <span class="stat-label">Années d’Expérience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="purecounter" data-purecounter-start="0" data-purecounter-end="40"
+                                    data-purecounter-duration="2">20</span>
+                                <span class="stat-label">Projets Livrés</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#portfolio" class="btn btn-primary">Voir Mes Projets</a>
+                            <a href="#contact" class="btn btn-outline">Me Contacter</a>
+                        </div>
+
+                        <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                            <a href="https://www.linkedin.com/in/christmiel-djohi-15549523a/" target="_blank"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/Christmiel" target="_blank"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-container">
+                        <div class="floating-elements">
+
+                            <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="300">
+                                <i class="bi bi-server"></i>
+                                <span>Backend</span>
+                            </div>
+
+                            <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="400">
+                                <i class="bi bi-database"></i>
+                                <span>Bases de Données</span>
+                            </div>
+
+                            <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="500">
+                                <i class="bi bi-shield-lock"></i>
+                                <span>Sécurité</span>
+                            </div>
+
+                        </div>
+
+                        <img src="assets/img/profile/chris.jfif" alt="Portfolio Hero" class="img-fluid hero-main-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <br><br><br>
+
+
+    <!-- /Hero Section --
+
+   <!-- About Section Backend -->
+    <section id="about" class="about section mb-3">
+
+        <!-- Section Title -->
+        <div class="container section-title">
+            <h2>À propos</h2>
+            <p>Spécialiste du développement back-end et étudiante Analyste Cybersécurité, je conçois des architectures
+                robustes, sécurisées et évolutives.
+            </p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-image">
+                            <img src="assets/img/profile/be_ima.JPG" alt="Photo professionnelle" class="img-fluid">
+                        </div>
+                        <div class="signature-section">
+                            <h3>Christmiel DJOHI</h3>
+                            <p style="  font-family: 'Montserrat-Medium'; text-align: center; font-size: 1rem;"
+                                class="quote">Développeuse des APIs performantes et sécurisées au service de vos projets et étudiante Analyste Cybersécurité.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+                    <div class="about-content">
+                        <div class="intro">
+                            <h2 id="font ">Bonjour, je suis Christmiel — Développeuse Backend</h2>
+                            <p style=" font-size: 1.1rem; font-family: Montserrat-Medium;" class="lead" id="font ">
+                                Avec plusieurs années d’expérience en PHP Laravel, C# .NET et gestion de bases de
+                                données (MySQL, PostgreSQL et SQLServer),
+                                je conçois des solutions back-end solides, évolutives et sécurisées.
+                                Ma priorité est d’optimiser la performance, la maintenabilité et la sécurité de vos
+                                applications.
+                            </p>
+                        </div>
+
+                        <div class="skills-grid">
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="skill-icon">
+                                    <i class="bi bi-server"></i>
+                                </div>
+                                <h4>Architecture Backend</h4>
+                                <p id="font" style="font-size: 1rem; text-align: center;" class="">Design de systèmes
+                                    modulaire, APIs REST, microservices, gestion des données.</p>
+                            </div>
+
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="450">
+                                <div class="skill-icon">
+                                    <i class="bi bi-shield-lock"></i>
+                                </div>
+                                <h4>Sécurité Applicative</h4>
+                                <p id="font" style="font-size: 1rem; text-align: center;">Authentification,
+                                    autorisation, protection contre les vulnérabilités (XSS, CSRF).</p>
+                            </div>
+
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                                <div class="skill-icon">
+                                    <i class="bi bi-database"></i>
+                                </div>
+                                <h4>Gestion des Bases de Données</h4>
+                                <p id="font" style="font-size: 1rem; text-align: center;">Modélisation, optimisation des
+                                    requêtes SQL, migrations et sauvegardes.</p>
+                            </div>
+                        </div>
+
+                        <div id="font" class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
+                            <div class="timeline-item">
+                                <div class="year">2023</div>
+                                <div style="font-size: 1.1rem;" class="description">Début professionnel en développement
+                                    backend PHP et C#</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="year">2024</div>
+                                <div style="font-size: 1.1rem;" class="description">Conception d’API sécurisées pour des
+                                    applications critiques, de la modélisation des bases de données à la documentation
+                                    et aux tests via Postman.
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="year">2025</div>
+                                <div style="font-size: 1.1rem;" class="description">Optimisation, maintenance et
+                                    sécurité des
+                                    systèmes backend à haute charge
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="font" class="cta-section" data-aos="fade-up" data-aos-delay="400">
+                            <div class="fun-fact">
+                                <span class="emoji"></span>
+                                <span style="font-size: 1.1rem;" class="text">Passionnée par les défis techniques
+                                    complexes et l’amélioration
+                                    continue.</span>
+                            </div>
+                            <div class="action-buttons">
+                                <a href="#portfolio" class="btn btn-primary">Voir mes projets backend</a>
+                                <a (click)="downloadCV()" class="btn btn-primary" [class.disabled]="isLoading">
+                                    <i *ngIf="!isLoading" class="bi bi-download"></i>
+                                    <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status"
+                                        aria-hidden="true"></span>
+                                    {{ isLoading ? 'Téléchargement...' : 'Télécharger CV' }}
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Resume Section -->
+    <section id="resume font" class="resume section">
+
+        <!-- Section Title -->
+        <br><br><br>
+        <div class="container section-title">
+            <h2>Curriculum Vitae</h2>
+            <p>Dynamique, motivée et passionnée par le numérique, je mets mes compétences au service de projets modernes
+                et performants.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row">
+                <div style="  font-family: 'Montserrat-Medium';" class="col-lg-6" data-aos="fade-right"
+                    data-aos-delay="200">
+                    <div class="experience-section">
+                        <div class="section-header">
+                            <h2><i class="bi bi-briefcase"></i> Parcours Professionnel</h2>
+                            <p style="font-size: 1.1rem;" id="font" class="section-subtitle ">Expériences acquises grâce
+                                à divers projets,
+                                stages et missions orientés technologies et innovation.</p>
+                        </div>
+
+                        <div class="experience-cards">
+                            <div style="font-family: 'Montserrat-Medium';" class="experience-card" data-aos="zoom-in"
+                                data-aos-delay="300">
+                                <div class="card-header">
+                                    <div class="role-info">
+                                        <h3 id="font">Formation en Cybersécurité</h3>
+                                        <h4>Programme national – Gouvernement du Bénin</h4>
+                                    </div>
+                                    <span class="duration">2025 - en cours</span>
+                                </div>
+
+                                <div style="font-family: 'Montserrat-Medium';" class="card-body">
+                                    <p>Participation au programme national de formation en cybersécurité dédié à
+                                        100 femmes et jeunes filles au Bénin.</p>
+
+                                    <ul class="achievements fs-5">
+                                        <li class="fs-6">Initiation aux fondamentaux de la cybersécurité</li>
+                                        <li class="fs-6">Pratiques de sécurisation des systèmes et réseaux</li>
+                                        <li class="fs-6">Sensibilisation à la protection des données et aux cybermenaces
+                                        </li>
+                                        <li class="fs-6">Mise en situation sur des scénarios de cyberattaques</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div style="font-family: 'Montserrat-Medium';" class="experience-card" data-aos="zoom-in"
+                                data-aos-delay="300">
+                                <div class="card-header">
+                                    <div class="role-info">
+                                        <h3 id="font">Ingénieur d’Exploitation Informatique</h3>
+                                        <h4>Iwaju Tech</h4>
+                                    </div>
+                                    <span class="duration">2023 - 2025</span>
+                                </div>
+                                <div style="  font-family: 'Montserrat-Medium';" class="card-body">
+                                    <p>Participation à la conception, au développement et au maintien de
+                                        solutions numériques pour divers projets clients.</p>
+                                    <ul class="achievements fs-5">
+                                        <li class="fs-6">Conception d’API pour plusieurs plateformes</li>
+                                        <li class="fs-6">Correction de bugs et optimisation des applications</li>
+                                        <li class="fs-6">Amélioration continue des performances techniques</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="card-header">
+                                    <div class="role-info">
+                                        <h3>Développeuse Web — Stage</h3>
+                                        <h4>Iwaju Tech</h4>
+                                    </div>
+                                    <span class="duration">2023</span>
+                                </div>
+                                <div class="card-body">
+                                    <p>Contribution à la création d'une plateforme immersive et réalisation de
+                                        modélisations 3D de lieux touristiques.</p>
+                                    <ul class="achievements">
+                                        <li class="fs-6">Modélisation 3D (Blender)</li>
+                                        <li class="fs-6">Création d’une expérience virtuelle (A-Frame)</li>
+                                        <li class="fs-6">Développement backend avec Laravel</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column -->
+                <div style="  font-family: 'Montserrat-Medium';" class="col-lg-6" data-aos="fade-left"
+                    data-aos-delay="200">
+                    <div class="education-section">
+                        <div class="section-header">
+                            <h2><i class="bi bi-mortarboard"></i> Parcours Académique</h2>
+                            <p style="font-size: 1.1rem;" class="section-subtitle">Formations orientées informatique,
+                                cybersécurité et
+                                développement logiciel.</p>
+                        </div>
+
+                        <div class="education-timeline">
+                            <div class="timeline-track"></div>
+
+
+                            <div class="education-item" data-aos="slide-up" data-aos-delay="300">
+                                <div class="timeline-marker"></div>
+                                <div class="education-content">
+                                    <div class="degree-header">
+                                        <h3>Certif Cyber 5.2.100</h3>
+                                        <span class="year">2023</span>
+                                    </div>
+                                    <h4 class="institution">Proxymex Academy</h4>
+                                    <p style="font-size: 1.1rem;" class="">Formation en cybersécurité et initiation aux
+                                        méthodologies de protection des
+                                        systèmes.</p>
+                                </div>
+                            </div>
+                            <div class="education-item" data-aos="slide-up" data-aos-delay="300">
+                                <div class="timeline-marker"></div>
+                                <div class="education-content">
+                                    <div class="degree-header">
+                                        <h3>Développeuse Web — Stage</h3>
+                                        <h4>Fun High Tech</h4>
+
+                                        <span class="year">2022</span>
+                                    </div>
+                                    <p style="font-size: 1.1rem;">Participation au développement d’un site immobilier et
+                                        intégration de solutions
+                                        de paiement.</p> <br>
+                                    <ul class="achievements">
+                                        <li class="fs-6">Création de graphiques dynamiques (Chart.js)</li>
+                                        <li class="fs-6">Développement web (HTML5, CSS, PHP, JS)</li>
+                                        <li class="fs-6">Intégration du paiement Fedapay</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+    <div class="education-item" data-aos="slide-up" data-aos-delay="300">
+                                <div class="timeline-marker"></div>
+                                <div class="education-content">
+                                    <div class="degree-header">
+                                        <h3>Développeuse Web — Stage</h3>
+                                        <h4>IITECH SARL</h4>
+
+                                        <span class="year">2021</span>
+                                    </div>
+                                    <p style="font-size: 1.1rem;">Création d’un système de messagerie simple avec php, bootstrap et mysql.</p> <br>
+                                    
+                                </div>
+                            </div>
+
+
+
+                            <div class="education-item" data-aos="slide-up" data-aos-delay="400">
+                                <div class="timeline-marker"></div>
+                                <div class="education-content">
+                                    <div class="degree-header">
+                                        <h3>Licence Professionnelle en Système Informatique et Logiciel</h3>
+                                        <span class="year">2020 - 2023</span>
+                                    </div>
+                                    <h4 class="institution">École Supérieure Le Faucon</h4>
+                                    <p style="font-size: 1.1rem;">Formation centrée sur le développement logiciel, le
+                                        réseau et la gestion des
+                                        systèmes informatiques.</p>
+                                </div>
+                            </div>
+
+                            <div class="education-item" data-aos="slide-up" data-aos-delay="500">
+                                <div class="timeline-marker"></div>
+                                <div class="education-content">
+                                    <div class="degree-header">
+                                        <h3>Baccalauréat Série C</h3>
+                                        <span class="year">2020</span>
+                                    </div>
+                                    <h4 class="institution">Collège Mgr Steinmetz</h4>
+                                    <p style="font-size: 1.1rem;">Formation scientifique orientée mathématiques et
+                                        sciences physiques.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <br><br><br>
+    <section style="  font-family: 'Montserrat-Medium';
+" id="services" class="services section">
+
+        <!-- Section Title -->
+        <div class="container section-title">
+            <h2>Services</h2>
+            <p>Des solutions backend fiables, sécurisées et performantes pour répondre aux besoins de vos projets.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="bi bi-stack"></i>
+                        </div>
+                        <h3>Développement d’API REST & GraphQL</h3>
+                        <p>Conception et développement d’API robustes, sécurisées et évolutives permettant à vos
+                            applications de communiquer efficacement.</p>
+
+                    </div>
+                </div><!-- End Service Item -->
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3>Sécurité & Authentification</h3>
+                        <p>Mise en place de systèmes d’authentification, contrôle d’accès, gestion des rôles, cryptage
+                            et bonnes pratiques de sécurité.</p>
+
+                    </div>
+                </div><!-- End Service Item -->
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h3>Optimisation & Performance</h3>
+                        <p>Analyse du code, amélioration des temps de réponse, optimisation des requêtes SQL et des
+                            architectures backend.</p>
+
+                    </div>
+                </div><!-- End Service Item -->
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h3>Intégration Services & Microservices</h3>
+                        <p>Développement et orchestration de microservices, mise en place de communications entre
+                            services et architectures distribuées.</p>
+
+                    </div>
+                </div><!-- End Service Item -->
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                        </div>
+                        <h3>Déploiement & Hébergement Cloud</h3>
+                        <p>Configuration de serveurs, CI/CD, conteneurisation (Docker), hébergement sur AWS, Azure, GCP
+                            ou services mutualisés.</p>
+
+                    </div>
+                </div><!-- End Service Item -->
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item">
+                        <div class="icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h3>Automatisation & Scripts Serveur</h3>
+                        <p>Création de scripts, automatisation des processus serveur, tâches planifiées et maintenance
+                            technique backend.</p>
+
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+
+    </section><br>
+
+    <!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <p>Découvrez mes réalisations web et mobile où j'ai mis en œuvre mes compétences en
+                développement front-end, back-end et en expérience utilisateur.</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                <!-- Filtres -->
+                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+
+                    <li (click)="setFilter('*')" [class.filter-active]="selectedFilter === '*'">
+                        <i class="bi bi-grid-3x3"></i> Tous les projets
+                    </li>
+
+                    <li (click)="setFilter('web')" [class.filter-active]="selectedFilter === 'web'">
+                        Applications Web
+                    </li>
+
+                    <li (click)="setFilter('mobile')" [class.filter-active]="selectedFilter === 'mobile'">
+                        Applications Mobile
+                    </li>
+
+                    <li (click)="setFilter('official')" [class.filter-active]="selectedFilter === 'official'">
+                        Sites Officiels
+                    </li>
+
+                </ul>
+
+                <!-- Portfolio Grid -->
+                <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item p-4" *ngFor="let p of projects"
+                        [ngClass]="'filter-' + p.category"
+                        [hidden]="selectedFilter !== '*' && !p.category.includes(selectedFilter)">
+
+                        <article class="portfolio-entry">
+                            <figure class="entry-image">
+
+                                <img [src]="p.img" class="img-fluid" [alt]="p.title" loading="lazy">
+
+                                <div class="entry-overlay">
+                                    <div class="overlay-content">
+
+                                        <div class="entry-meta">
+                                            {{ p.title }}
+                                        </div>
+
+                                        <h3 class="entry-title">
+                                            {{ p.title }}
+                                        </h3>
+
+                                        <div class="entry-links">
+
+                                            <a [href]="p.link" target="_blank">
+                                                <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </figure>
+                        </article>
+
+                    </div>
+
+                </div><!-- End Portfolio Container -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+        <!-- Section Title -->
+        <div style="  font-family: 'Montserrat-Medium';" class="container section-title" data-aos="fade-up">
+            <h2>Témoignages</h2>
+            <p>Ce que mes collaborateurs disent de mon travail</p>
+        </div>
+
+        <div class="container testimonial-wrapper">
+
+            <owl-carousel-o [options]="carouselOptions">
+
+                <!-- Témoignage 1 -->
+                <ng-template carouselSlide>
+                    <div class="testimonial-item" data-aos="fade-up">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p style="font-family: 'Montserrat-Medium';">
+                                Un développeur backend très rigoureux, capable de concevoir des APIs robustes
+                                et parfaitement documentées. Collaboration fluide et professionnalisme au top.
+                            </p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="../../assets/img/profile/gontran.png" alt="Gontran">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Obayomi ADJIBOLA</h3>
+                                    <span class="position">UI/UX Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+
+                <!-- Témoignage 2 -->
+                <ng-template carouselSlide>
+                    <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p style="font-family: 'Montserrat-Medium';">
+                                Travail impeccable sur les services backend. Maîtrise parfaite de .NET, Laravel
+                                et de l'architecture des web services sécurisés. Une référence pour tout projet
+                                nécessitant un backend performant et fiable.
+                            </p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="../../assets/img/profile/photo_iréné_lokossou.jpg" alt="Irene Lokossou">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Irene Lokossou</h3>
+                                    <span class="position">Développeur web | mobile</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+
+                <!-- Témoignage 3 -->
+                <ng-template carouselSlide>
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p style="font-family: 'Montserrat-Medium';">
+                                Un collaborateur fiable, efficace et très méthodique. Son expertise backend
+                                et sa maîtrise de Laravel ont été essentielles dans plusieurs de nos projets.
+                            </p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="../../assets/img/profile/caroline.jfif" alt="Caroline Meha">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Caroline Meha</h3>
+                                    <span class="position">Software Engineer | UI/UX Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+
+                <!-- Témoignage 4 - Jean-Christophe Sadeler -->
+                <ng-template carouselSlide>
+                    <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-content ">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+
+                            <p style="font-family: 'Montserrat-Medium';">
+                                Excellent sens de l’analyse et de la structuration des services backend.
+                                Travail propre, fiable, et toujours livré dans les délais.
+                                Un projet rendu dans les plus brefs délais, avec un professionnalisme irréprochable.
+                            </p>
+
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="../../assets/img/profile/profil.jpg" alt="Jean-Christophe Sadeler">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Jean-Christophe Sadeler</h3>
+                                    <span class="position">Juriste | Data protection officer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+
+
+            </owl-carousel-o>
+
+        </div>
+
+    </section>
+    <!-- /Testimonials Section -->
+
+    <!-- Faq Section -->
+    <!-- /Faq Section -->
+    <br>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <!-- <div class="container section-title" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>Besoin d’un backend robuste, sécurisé et performant ? Contactez-moi pour discuter de votre
+                projet.</p>
+        </div> -->
+
+        <div class="contact-2025">
+            <!-- Grid Background -->
+            <div class="cyber-grid"></div>
+
+            <div class="container">
+                <div class="contact-header">
+                    <div class="tag">ARCHITECTE BACKEND</div>
+                    <h1 class="gradient-title">CONTACT</h1>
+                    <p class="subtitle">Direct • Sécurisé • Rapide</p>
+                </div>
+
+                <div class="contact-matrix">
+                    <!-- Carte de statut -->
+                    <div class="status-card">
+                        <div class="status-indicator">
+                            <div class="pulse-dot"></div>
+                            <span>DISPONIBLE POUR DE NOUVEAUX PROJETS</span>
+                        </div>
+                        <div class="status-info">
+                            <p> Abomey-Calavi, Bénin • Travail à distance possible</p>
+                        </div>
+                    </div>
+
+                    <!-- Canaux de contact -->
+                    <div class="channels-grid">
+                        <!-- EMAIL -->
+                        <a href="mailto:djohichristmiel@gmail.com" class="channel-card" data-type="email">
+                            <div class="channel-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </div>
+                            <div class="channel-content">
+                                <h3>EMAIL</h3>
+                                <p>djohichristmiel&#64;gmail.com</p>
+                                <span class="response-time">Réponse sous 24h</span>
+                            </div>
+                            <div class="channel-arrow">→</div>
+                        </a>
+
+                        <!-- WHATSAPP -->
+                        <a href="https://wa.me/2290164960603" class="channel-card" data-type="whatsapp">
+                            <div class="channel-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2" />
+                                </svg>
+                            </div>
+                            <div class="channel-content">
+                                <h3>WHATSAPP</h3>
+                                <p>+229 01 64 96 06 03</p>
+                                <span class="response-time">Réponse rapide</span>
+                            </div>
+                            <div class="channel-arrow">→</div>
+                        </a>
+
+                        <!-- FUSEAU HORAIRE -->
+                        <div class="channel-card" data-type="timezone">
+                            <div class="channel-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                                </svg>
+                            </div>
+                            <div class="channel-content">
+                                <h3>FUSEAU HORAIRE</h3>
+                                <p>GMT+1 (WAT)</p>
+                                <span class="response-time">Disponible de 9h à 18h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA (optionnel) -->
+                    <!--
+    <div class="contact-cta">
+      <p>Vous avez un projet ou une idée ? Contactez-moi pour construire une solution fiable et évolutive.</p>
+    </div>
+    -->
+                </div>
+                <footer id="footer" class=" footer position-relative ">
+
+                    <div class=" d-flex  container justify-content-center">
+                        <div class="copyright text-center ">
+                            <p>© <span>Copyright</span> <strong
+                                    class="px-1 sitename">djohichristmiel&#64;gmail.com</strong> <span>All
+                                    Rights
+                                    Reserved</span></p>
+                        </div>
+
+                    </div>
+
+                </footer>
+            </div>
+
+        </div>
+
+    </section><!-- /Contact Section -->
+
+</section>
+
+
+<div class="scroll-to-top" (click)="scrollToTop()">
+    <i class="pi pi-arrow-up"></i>
+</div>
