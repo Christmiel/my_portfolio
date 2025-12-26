@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+commande pour faire le build 
+
+ng build --configuration production --output-path docs --base-href /my_portfolio/
+
+Deplacer le contenu  du  dossier browser a la racine du dossier docs
+
+faire le commit puis le push 
+
+Aller dans action dans github.com pour verfier l'etat du build 
+
+si ok verfier si les correction s'appliquent a la page 
