@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { saveAs } from 'file-saver';
 import Typed from 'typed.js';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { RouterModule } from '@angular/router';
 
 interface Contact {
   nom: string;
@@ -23,7 +24,8 @@ interface Contact {
     FormsModule,
     HttpClientModule,
     CommonModule,
-    CarouselModule
+    CarouselModule,
+    RouterModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -180,5 +182,10 @@ export class HomeComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
+  }
 
 }
